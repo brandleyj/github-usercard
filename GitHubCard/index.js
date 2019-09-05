@@ -39,7 +39,7 @@ const entryPoint = document.querySelector(".cards");
 const followersArray = [];
 
 axios
-	.get("https://api.github.com/users/brandleyj/followers")
+	.get("https://api.github.com/users/brandleyj/followers_url")
 	.then(response => {
 		console.log(response.data);
 		response.data.forEach(item => {
